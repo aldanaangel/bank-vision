@@ -1,0 +1,24 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Modificar personas</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Nombre:</label>
+                    <input [(ngModel)]="persona.nombre" name="nombre" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Apellido:</label>
+                    <input [(ngModel)]="persona.apellido" name="apellido" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Celular:</label>
+                    <input [(ngModel)]="persona.celular" name="celular" type="text" class="form-control">
+                </div>
+                <button (click)="actualizar(persona)" class="btn btn-outline-danger">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>

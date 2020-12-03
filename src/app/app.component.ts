@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bank-vision';
+
+  constructor( private router: Router ) { }
+
+  ngOnInit(): void {
+  }
+  
+  listarPersonas(){
+    this.router.navigate(['list']);
+  }
+  
+  registrarPersonas(){
+    this.router.navigate(['add']);
+  }
+
 }
